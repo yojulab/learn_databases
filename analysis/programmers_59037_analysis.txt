@@ -1,0 +1,19 @@
+from https://programmers.co.kr/learn/courses/30/lessons/59037
+
+- 요구 사항 파악
+동물 보호소 동물 정보 테이블(ANIMAL_INS)
+테이블 구조 : ANIMAL_ID(동물의 아이디), ANIMAL_TYPE(생물 종), DATETIME(보호 시작일), INTAKE_CONDITION(보호 시작 시 상태), NAME(이름), SEX_UPON_INTAKE(중성화 여부)
+젊은 동물만 찾아 아이디와 이름을 아이디 순 조회
+
+- 프로그래밍 순서
+젊은 동물 조회 query 만들기(INTAKE_CONDITION != 'Aged')
+조회한 젊은 동물수 확인
+젊은 동물만 있는 아이디와 이름 query 만들고, row 수 확인
+
+- 주요 단어 영문 이름 선정 
+
+- 테스트 케이스
+
+- 실패 시 원인 기록
+
+- 배운 점
