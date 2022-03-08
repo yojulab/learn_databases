@@ -12,7 +12,8 @@
 |max|상위 n개 레코드||-|-|[프로그래머스 59405](https://programmers.co.kr/learn/courses/30/lessons/59405)|-|
 |max|최댓값 구하기||-|-|[프로그래머스 59415](https://programmers.co.kr/learn/courses/30/lessons/59415)|-|
 |min|최솟값 구하기||-|-|[프로그래머스 59038](https://programmers.co.kr/learn/courses/30/lessons/59038)|-|
-|min|동물 수 구하기||-|-|[프로그래머스 59406](https://programmers.co.kr/learn/courses/30/lessons/59406)|-|
-|min|중복 제거하기||-|-|[프로그래머스 59408](https://programmers.co.kr/learn/courses/30/lessons/59408)|-|
+|count|동물 수 구하기||-|-|[프로그래머스 59406](https://programmers.co.kr/learn/courses/30/lessons/59406)|-|
+|distinct|중복 제거하기||-|-|[프로그래머스 59408](https://programmers.co.kr/learn/courses/30/lessons/59408)|-|
+|GROUP BY|고양이와 개는 몇 마리 있을까||-|-|[프로그래머스 59040](https://programmers.co.kr/learn/courses/30/lessons/59040)|-|
 |-|- |-|-|-|-|-|
 |case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
