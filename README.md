@@ -15,5 +15,6 @@
 |count|동물 수 구하기||-|-|[프로그래머스 59406](https://programmers.co.kr/learn/courses/30/lessons/59406)|-|
 |distinct|중복 제거하기||-|-|[프로그래머스 59408](https://programmers.co.kr/learn/courses/30/lessons/59408)|-|
 |GROUP BY|고양이와 개는 몇 마리 있을까||-|-|[프로그래머스 59040](https://programmers.co.kr/learn/courses/30/lessons/59040)|-|
+|GROUP BY|동명 동물 수 찾기||-|-|[프로그래머스 59041](https://programmers.co.kr/learn/courses/30/lessons/59041)|-|
 |-|- |-|-|-|-|-|
 |case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
