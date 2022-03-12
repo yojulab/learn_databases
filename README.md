@@ -19,6 +19,8 @@
 |GROUP BY|고양이와 개는 몇 마리 있을까||-|-|[프로그래머스 59040](https://programmers.co.kr/learn/courses/30/lessons/59040)|-|
 |HAVING|동명 동물 수 찾기||-|-|[프로그래머스 59041](https://programmers.co.kr/learn/courses/30/lessons/59041)|-|
 |HAVING|입양 시각 구하기(1)|hour()|-|-|[프로그래머스 59412](https://programmers.co.kr/learn/courses/30/lessons/59412)|-|
-|HAVING|입양 시각 구하기(2)|hour()|-|-|[프로그래머스 59413](https://programmers.co.kr/learn/courses/30/lessons/59413)|-|
+|HAVING|입양 시각 구하기(2)|RECURSIVE|-|-|[프로그래머스 59413](https://programmers.co.kr/learn/courses/30/lessons/59413)|-|
+|JOIN|입양 시각 구하기(2)|RECURSIVE|-|-|[프로그래머스 59413](https://programmers.co.kr/learn/courses/30/lessons/59413)|-|
+|IS NULL|이름이 없는 동물의 아이디||-|-|[프로그래머스 59039](https://programmers.co.kr/learn/courses/30/lessons/59039)|-|
 |-|- |-|-|-|-|-|
 |case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
