@@ -22,5 +22,6 @@
 |HAVING|입양 시각 구하기(2)|RECURSIVE|-|-|[프로그래머스 59413](https://programmers.co.kr/learn/courses/30/lessons/59413)|-|
 |JOIN|입양 시각 구하기(2)|RECURSIVE|-|-|[프로그래머스 59413](https://programmers.co.kr/learn/courses/30/lessons/59413)|-|
 |IS NULL|이름이 없는 동물의 아이디||-|-|[프로그래머스 59039](https://programmers.co.kr/learn/courses/30/lessons/59039)|-|
+|IS NULL|이름이 있는 동물의 아이디||-|-|[프로그래머스 59407](https://programmers.co.kr/learn/courses/30/lessons/59407)|-|
 |-|- |-|-|-|-|-|
 |case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
