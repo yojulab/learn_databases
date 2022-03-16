@@ -25,5 +25,6 @@
 |IS NULL|이름이 있는 동물의 아이디(2)||-|-|[프로그래머스 59407](https://programmers.co.kr/learn/courses/30/lessons/59407)|-|
 |IFNULL|NULL 처리하기||-|-|[프로그래머스 59410](https://programmers.co.kr/learn/courses/30/lessons/59410)|-|
 |JOIN|없어진 기록 찾기||-|-|[프로그래머스 59042](https://programmers.co.kr/learn/courses/30/lessons/59042)|-|
+|JOIN|있었는데요 없었습니다||-|-|[프로그래머스 59043](https://programmers.co.kr/learn/courses/30/lessons/59043)|-|
 |-|- |-|-|-|-|-|
 |case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
