@@ -3,6 +3,10 @@
 #### refer : https://www.w3schools.com/sql/default.asp
 #### dataset refer : 
 ##### 프로그래머스 sql : https://www.kaggle.com/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes
+
+<details>
+<summary>ETC</summary>
+
 |분류| 제목 | 분석| 풀기 | 해보기| 출처 | 참조 |
 | :---: | --- | :---: | :---: | :---: | :---: | :---: |
 |select|모든 레코드 조회하기||-|[Mysql](https://programmers.co.kr/learn/courses/30/lessons/59034),[Oracle](https://programmers.co.kr/learn/courses/30/lessons/59034?language=oracle)|[프로그래머스 59034](https://programmers.co.kr/learn/courses/30/lessons/59034)|-|
@@ -24,9 +28,24 @@
 |IS NULL|이름이 없는 동물의 아이디||-|-|[프로그래머스 59039](https://programmers.co.kr/learn/courses/30/lessons/59039)|-|
 |IS NULL|이름이 있는 동물의 아이디(2)||-|-|[프로그래머스 59407](https://programmers.co.kr/learn/courses/30/lessons/59407)|-|
 |IFNULL|NULL 처리하기||-|-|[프로그래머스 59410](https://programmers.co.kr/learn/courses/30/lessons/59410)|-|
+</details>
+
+<details>
+<summary>JOIN</summary>
+
+|분류| 제목 | 분석| 풀기 | 해보기| 출처 | 참조 |
+| :---: | --- | :---: | :---: | :---: | :---: | :---: |
 |JOIN|없어진 기록 찾기||-|-|[프로그래머스 59042](https://programmers.co.kr/learn/courses/30/lessons/59042)|-|
 |JOIN|있었는데요 없었습니다||-|-|[프로그래머스 59043](https://programmers.co.kr/learn/courses/30/lessons/59043)|-|
 |JOIN|오랜 기간 보호한 동물(1)||-|-|[프로그래머스 59044](https://programmers.co.kr/learn/courses/30/lessons/59044)|-|
 |JOIN|보호소에서 중성화한 동물||-|-|[프로그래머스 59045](https://programmers.co.kr/learn/courses/30/lessons/59045)|-|
-|-|- |-|-|-|-|-|
-|case when|중성화 여부 파악하기||-|[Mysql]()|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
+|String, Date|루시와 엘라 찾기||-|-|[프로그래머스 59046](https://programmers.co.kr/learn/courses/30/lessons/59046)|-|
+</details>
+
+<details open>
+<summary>String, Date</summary>
+
+|분류| 제목 | 분석| 풀기 | 해보기| 출처 | 참조 |
+| :---: | --- | :---: | :---: | :---: | :---: | :---: |
+|String, Date|루시와 엘라 찾기||-|-|[프로그래머스 59046](https://programmers.co.kr/learn/courses/30/lessons/59046)|-|
+</details>
