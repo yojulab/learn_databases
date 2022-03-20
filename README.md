@@ -48,4 +48,6 @@
 |분류| 제목 | 분석| 풀기 | 해보기| 출처 | 참조 |
 | :---: | --- | :---: | :---: | :---: | :---: | :---: |
 |String, Date|루시와 엘라 찾기||-|-|[프로그래머스 59046](https://programmers.co.kr/learn/courses/30/lessons/59046)|-|
+|String, Date|이름에 el이 들어가는 동물 찾기||-|-|[프로그래머스 59047](https://programmers.co.kr/learn/courses/30/lessons/59047)|-|
+
 </details>
