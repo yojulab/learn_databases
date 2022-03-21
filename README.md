@@ -49,5 +49,7 @@
 | :---: | --- | :---: | :---: | :---: | :---: | :---: |
 |String, Date|루시와 엘라 찾기||-|-|[프로그래머스 59046](https://programmers.co.kr/learn/courses/30/lessons/59046)|-|
 |String, Date|이름에 el이 들어가는 동물 찾기||-|-|[프로그래머스 59047](https://programmers.co.kr/learn/courses/30/lessons/59047)|-|
+|String, Date|중성화 여부 파악하기||-|-|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
+|String, Date|오랜 기간 보호한 동물(2)||-|-|[프로그래머스 59411](https://programmers.co.kr/learn/courses/30/lessons/59411)|-|
 
 </details>
