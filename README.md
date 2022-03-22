@@ -39,7 +39,6 @@
 |JOIN|있었는데요 없었습니다||-|-|[프로그래머스 59043](https://programmers.co.kr/learn/courses/30/lessons/59043)|-|
 |JOIN|오랜 기간 보호한 동물(1)||-|-|[프로그래머스 59044](https://programmers.co.kr/learn/courses/30/lessons/59044)|-|
 |JOIN|보호소에서 중성화한 동물||-|-|[프로그래머스 59045](https://programmers.co.kr/learn/courses/30/lessons/59045)|-|
-|String, Date|루시와 엘라 찾기||-|-|[프로그래머스 59046](https://programmers.co.kr/learn/courses/30/lessons/59046)|-|
 </details>
 
 <details open>
@@ -51,5 +50,6 @@
 |String, Date|이름에 el이 들어가는 동물 찾기||-|-|[프로그래머스 59047](https://programmers.co.kr/learn/courses/30/lessons/59047)|-|
 |String, Date|중성화 여부 파악하기||-|-|[프로그래머스 59409](https://programmers.co.kr/learn/courses/30/lessons/59409)|-|
 |String, Date|오랜 기간 보호한 동물(2)||-|-|[프로그래머스 59411](https://programmers.co.kr/learn/courses/30/lessons/59411)|-|
+|String, Date|DATETIME에서 DATE로 형 변환||-|-|[프로그래머스 59414](https://programmers.co.kr/learn/courses/30/lessons/59414)|-|
 
 </details>
