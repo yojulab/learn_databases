@@ -1,7 +1,10 @@
-### 찐 사수와 같이 하는 DB([사용법](./refer/README.md))
-코딩테스트 문제를 풀며 
 #### refer 
 + https://app.datacamp.com/learn/courses
-#### 문제 풀이
-+ https://www.w3schools.com/sql/default.asp
-+ [query](https://app.datacamp.com/learn/courses/introduction-to-sql), [nosql(mongodb)](https://app.datacamp.com/learn/courses/introduction-to-using-mongodb-for-data-science-with-python)
+
+
+| Category | title | Refer | query |
+| ----- | --- | ------ | ------ |
+| Create Table | excel to sqlite | [excel](./queries/codes/datasets_template.xlsx) | [py](./queries/codes/excel_sheet_to_sqlite.py) |
+| Single Table | information |  | [query](./queries/information.sql) |
+| Single Table | Members |  | [query](./queries/members.sql) |
+| N:N Table | Users Auths | [ERD](https://github.com/yojulab/learn_ERDs/blob/main/projects/excel_erds/Users_Auths.vuerd) | [query](./queries/Users_Auths_query.sql) |
