@@ -1,0 +1,45 @@
+* 해보기
+- Table : 
+- Columns :
+- WHERE : 
+
+* where 
++ 1 : Price가 20이상 26 미만
+
++ 2 : SupplierID가 6이상 8이하 이면서 Price가 20이상 26 미만
+
++1 : Customers 중에서 Orders ShipperID=2 사람들 리스트 출력 ?
+
+* Group by
++1 : Categories별로 구성된 제품 갯수, 가격 평균/최고값/최저값 표시하세요.
+Categories_Products_Count.sql
+
+* subquery
++1 : Customers 중에서 제공자(Suppliers) 나라가 UK, USA 사람은 ? 20
+
++2 : Customers 중에서 Orders ShipperID=2 사람들 리스트 출력 ?
+83
+
++3 : Orders(주문자) 중 OrderDetails(주문 상세) Quantity가 50인 리스트 출력 ?
+72
+
++4 : 직원(Employees) EmployeeID가 7, 9인 종업원이 받는 주문(Orders) 총 수는 ?
+Employees_Order_totals.sql
+
++5 : 분류(Categories)가 Produce, Beverages인 제품(Products) 총 갯수는 ?
+Categories_Products_totals.sql
+
++ 6 : CategoryName 가 Dairy Products, Seafood이고 Price 10.00이상 50.00이하인 합계와 평균은 ?
+CategoryName_Products.sql
+
++ 7 : CategoryName 가 Dairy Products, Seafood이고 Price 10.00이상 50.00이하인 주문  OrderID 내역과 총 갯수는 ?
+CategoryName_Products_Order.sql
+
+
+
+
+
+
+
+
+
