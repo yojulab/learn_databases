@@ -1,0 +1,18 @@
+* Join
++1 : users와 auths JOIIN하며, UNIQUE_ID = Paul인 것을 표시 내용은 이름, 이메일, 권한 ID ? (w3schools)
+
++2 : Products에 CategoryID가 5, 6를 표시, 내용 프로덕트 이름, 공급자 이름 출력 ?  (w3schools)
+Products_CategoryID.sql
+
++3 : 제품명, 가격, 주문 갯수 표시 ? (w3schools)
+Products_Quantity.sql
+
+* Join 3Tables
++ 4-1: 이름, 이메일, 권한이름 표시 / 조건 이름이 'Teddy', 'Allen' ? (MySQL)
+Users_Auth_names.sql
+
++4 : 주문자이름, 주문 날짜, 주문 갯수 표시/ 조건은 주문자 이름이 'Bo'가 들어간 사람들 ? (w3schools)
+
++5 : 제품명, 공급자명, 공급자 나라, 목록이름 / 조건은 가격이 40이상 90이하이고, 카테고리가 Seafood ? (w3schools)
+
++6 : 주문자이름, 주문 제품명, 주문 갯수, 연락자이름, 연락자 전화번화, 배송업체명, 배송업체연락처, 목록이름 / 조건은 주문자 거주지가 'UK'에 'London' ? (w3schools)
