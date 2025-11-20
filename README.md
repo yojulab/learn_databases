@@ -9,6 +9,7 @@
 | Single Table | information |  | [query](./queries/information.sql) |
 | Single Table | Members |  | [query](./queries/members.sql) |
 | N:N Table | Users Auths | [ERD](https://github.com/yojulab/learn_ERDs/blob/main/projects/excel_erds/Users_Auths.vuerd) | [query](./queries/Users_Auths_query.sql) |
+| Single Table | Organization Self Query | | [query](./queries/organization_selfquery.sql) |
 
 ### Cases
 | Category | title | Refer | query |
