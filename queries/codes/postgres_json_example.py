@@ -31,11 +31,12 @@ def setup_database_json(conn):
 
     try:
         with conn.cursor() as cur:
+            cur.execute('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";')
             # jsonb_ops는 JSONB 데이터 유형에 대한 인덱싱을 지원합니다.
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS products (
-                    id SERIAL PRIMARY KEY,
-                    name VARCHAR(255) NOT NULL,
+                    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+                    name VARCHAR(255) UNIQUE NOT NULL,
                     details JSONB,
                     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
                 );
@@ -43,7 +44,7 @@ def setup_database_json(conn):
             print("'products' 테이블이 생성되었거나 이미 존재합니다.")
             
             # 테이블 초기화 (예제 반복 실행 시 데이터 중복 방지)
-            cur.execute("TRUNCATE TABLE products RESTART IDENTITY;")
+            cur.execute("TRUNCATE TABLE products;")
             print("'products' 테이블의 모든 데이터가 삭제되었습니다.")
 
             conn.commit()
@@ -71,9 +72,11 @@ def json_crud_examples(conn):
             }
             # psycopg2는 dict를 자동으로 JSON으로 변환하지만, json.dumps를 사용하는 것이 명시적입니다.
             cur.execute(
-                "INSERT INTO products (name, details) VALUES (%s, %s);",
+                "INSERT INTO products (name, details) VALUES (%s, %s) RETURNING id;",
                 (product_data["name"], json.dumps(product_data["details"]))
             )
+            notebook_id = cur.fetchone()[0]
+            print(f"노트북 제품이 추가되었습니다. ID: {notebook_id}")
 
             product_data_2 = {
                 "name": "스마트폰",
@@ -88,7 +91,7 @@ def json_crud_examples(conn):
                 "INSERT INTO products (name, details) VALUES (%s, %s);",
                 (product_data_2["name"], json.dumps(product_data_2["details"]))
             )
-            print("2개의 제품이 추가되었습니다.")
+            print("스마트폰 제품이 추가되었습니다.")
             conn.commit()
 
             # 2. READ: JSON 데이터 조회
@@ -125,22 +128,24 @@ def json_crud_examples(conn):
             # 3. UPDATE: JSON 데이터 수정
             print("\n--- 3. UPDATE: JSON 데이터 수정 ---")
             # 특정 필드 값 수정 (jsonb_set 함수 사용)
-            # 노트북(id=1)의 가격을 1250으로 변경
+            # 노트북의 가격을 1250으로 변경
             cur.execute(
-                "UPDATE products SET details = jsonb_set(details, '{price}', '1250') WHERE id = 1;"
+                "UPDATE products SET details = jsonb_set(details, '{price}', '1250') WHERE id = %s;",
+                (notebook_id,)
             )
             print("노트북 가격이 1250으로 변경되었습니다.")
 
             # 새로운 필드 추가
-            # 노트북(id=1)에 'manufacturer' 필드 추가
+            # 노트북에 'manufacturer' 필드 추가
             cur.execute(
-                "UPDATE products SET details = details || '{\"manufacturer\": \"Gemini\"}'::jsonb WHERE id = 1;"
+                "UPDATE products SET details = details || '{\"manufacturer\": \"Gemini\"}'::jsonb WHERE id = %s;",
+                (notebook_id,)
             )
             print("노트북에 제조사 정보가 추가되었습니다.")
             conn.commit()
 
             # 수정된 데이터 확인
-            cur.execute("SELECT details FROM products WHERE id = 1;")
+            cur.execute("SELECT details FROM products WHERE id = %s;", (notebook_id,))
             updated_product = cur.fetchone()
             print("수정된 노트북 정보:", json.dumps(updated_product[0], indent=2, ensure_ascii=False))
 

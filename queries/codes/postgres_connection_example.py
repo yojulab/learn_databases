@@ -33,6 +33,7 @@ def setup_database(conn):
 
     try:
         with conn.cursor() as cur:
+            cur.execute('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";')
             # 벡터 확장 활성화 (pgvector가 설치된 경우)
             try:
                 cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
@@ -44,7 +45,7 @@ def setup_database(conn):
             # 사용자 테이블 생성 (간단한 예제)
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS users (
-                    id SERIAL PRIMARY KEY,
+                    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
                     username VARCHAR(80) UNIQUE NOT NULL,
                     email VARCHAR(120) UNIQUE NOT NULL,
                     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
@@ -55,8 +56,8 @@ def setup_database(conn):
             # 아이템과 벡터 임베딩 테이블 생성
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS items (
-                    id SERIAL PRIMARY KEY,
-                    name VARCHAR(255) NOT NULL,
+                    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+                    name VARCHAR(255) UNIQUE NOT NULL,
                     embedding vector(3) -- 예시로 3차원 벡터
                 );
             """)
@@ -95,7 +96,7 @@ def insert_sample_data(conn):
             ]
             cur.executemany("""
                 INSERT INTO items (name, embedding) VALUES (%s, %s)
-                ON CONFLICT (id) DO NOTHING;
+                ON CONFLICT (name) DO NOTHING;
             """, sample_items)
             print(f"{cur.rowcount}개의 새로운 아이템이 'items' 테이블에 추가되었습니다.")
 
